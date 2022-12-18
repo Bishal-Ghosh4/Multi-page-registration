@@ -11,70 +11,70 @@
     <div class="container">
         <div class="title">Registration</div>
         <div class="content">
-            <form action="#">
+            <form action="education.php" method="post" >
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">HSC Institution Name*</span>
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="" name="HSC_Institution_Name" required>
                     </div>
                     <div class="input-box">
                         <span class="details">HSC Board</span>
-                        <select class="board">
-                            <option value="volvo">CBSE</option>
-                            <option value="saab">ICSC</option>
-                            <option value="opel">State Board</option>
+                        <select class="board" name="HSC_Board">
+                            <option value="CBSE">CBSE</option>
+                            <option value="ICSC">ICSC</option>
+                            <option value="State Board">State Board</option>
                           </select>
                         
                     </div>
                     <div class="input-box">
                         <span class="details">Score in HSC in percentage *</span>
-                        <input type="percentage" placeholder="%" required>
+                        <input type="percentage" placeholder="%" name="Score_in_HSC" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">SSC Institution name*</span>
-                        <input type="email" placeholder="" required>
+                        <span class="details">SSC Institution Name*</span>
+                        <input type="text" placeholder="" name="SSC_Institution_Name" required>
                     </div>
                     <div class="input-box">
                         <span class="details">SSC Board</span>
-                        <select class="board">
-                            <option value="volvo">CBSE</option>
-                            <option value="saab">ICSC</option>
-                            <option value="opel">State Board</option>
-                          </select>
+                        <select class="board" name="SSC_Board">
+                            <option value="CBSE" >CBSE</option>
+                            <option value="ICSC" >ICSC</option>
+                            <option value="State Board" >State Board</option>
+                        </select>
                         
                     </div>
                     <div class="input-box">
                         <span class="details">Score in SSC in percentage*</span>
-                        <input type="text" placeholder="%" required>
+                        <input type="text" placeholder="%" name="Score_in_SSC" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Currently pursuing *</span>
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder=""  name="Currently_pursuing" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Current educational institution name*</span>
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="" name="Current_educational_institution_name" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Overall percentage*</span>
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="" name="Overall_percentage" required>
                     </div>
                     
                     <div class="input-box">
                         <span class="details">Current backlogs if any</span>
-                        <select class="board">
-                            <option value="volvo">0</option>
-                            <option value="saab">1</option>
-                            <option value="opel">2</option>
-                            <option value="opel">3</option>
-                            <option value="opel">4</option>
-                            <option value="opel">5</option>
+                        <select class="board" name="Current_backlogs">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                           </select>
                     </div>
                 </div>
                 
                 <div class="button">
-                    <input type="submit" value="Register">
+                    <input type="submit" name="submit" value="Register">
                 </div>
             </form>
         </div>
